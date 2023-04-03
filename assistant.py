@@ -23,6 +23,9 @@ if 'past' not in st.session_state:
 
 if 'textbox' not in st.session_state:
     st.session_state['textbox'] = ""
+    
+if 'infotext' not in st.session_state:
+    st.session_state['infotext'] = ""
 
 def initModel(template):
     llm = OpenAI(temperature=10e-3)
